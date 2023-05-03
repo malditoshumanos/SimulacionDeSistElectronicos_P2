@@ -2,16 +2,12 @@
 
 Servo myServo; // Crear una instancia de la clase servo 
 
-void setup() {
-  // put your setup code here, to run once:
-  
+void setup() {  
   myServo.attach(9); // Especificar el pin de conexión del servomotor
   myServo.write(0);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
   // Mover el motor de 0 a 180 grados en pasos de 1 grado
   for(int pos = 0; pos <= 180; pos++){
     myServo.write(pos); // Modificar la orientación del eje del servomotor
@@ -47,5 +43,4 @@ void loop() {
 
   delay(2200);
     
-  
 }
